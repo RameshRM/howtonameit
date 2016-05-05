@@ -5,9 +5,13 @@
     "path": "GET /message",
     "handler": "require:./lib/messenger"
   }, {
+    "path": "POST /promote",
+    "handler": "require:./lib/promotions/promote"
+  }, {
     "path": "GET /promote",
     "handler": "require:./lib/promotions"
   },
+
   {
     "path": "GET /",
     "handler": "require:./lib"
