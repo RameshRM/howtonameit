@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>how-to-nameit </title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <style media="screen">
+    html {}
+
+    header {
+      background-color: #2196F3;
+      color: #fff;
+    }
+
+    header > h1 {
+      margin: 0px;
+      color: #fff;
+      padding: 5px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {}
+
+    body {
+      margin: 0px;
+      font-family: Arial, Verdana, Tahoma;
+      background-color: #FFF;
+      color: rgba(0, 0, 0, .87);
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    }
+
+    input {
+      height: 40px;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      color: #555;
+    }
+
+    footer {
+      position: relative;
+      bottom: -30px;
+      height: 100px;
+      width: 100%;
+      background-color: #eee;
+      border-top: 1px solid #333;
+      padding-top: 35px;
+    }
+
+    .field-element {
+      display: block;
+      margin: 1em;
+      border-bottom: solid 1px #aaa;
+      padding: 10px;
+    }
+
+    .field-element > label {
+      margin-bottom: 10px;
+    }
+
+    #receiver {
+      max-width: 600px;
+    }
+
+    #notes {
+      width: 600px;
+    }
+
+    #send {
+      background-color: #2196F3;
+      color: #fff;
+      -webkit-animation-duration: .1ms;
+      animation-duration: .1ms;
+      -webkit-animation-name: mui-node-inserted;
+      animation-name: mui-node-inserted;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      transition: all .2s ease-in-out;
+      display: inline-block;
+      height: 36px;
+      padding: 0 26px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      background-image: none;
+      text-align: center;
+      line-height: 36px;
+      vertical-align: middle;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 14px;
+      letter-spacing: .03em;
+      position: relative;
+      overflow: hidden;
+      margin: 20 auto;
+      max-width: 300px;
+      margin-left: 2em;
+    }
+
+    .notifier {
+      position: absolute;
+      width: 100%;
+      background: #fff;
+      top: 40px;
+      color: white;
+    }
+
+    .chime {
+      left: 25%;
+      background-color: green;
+      border: solid 1px transparent;
+      border-radius: 3px;
+      padding: 10px;
+    }
+
+    #info-bar {
+      display: table-cell;
+      position: relative: ;
+      position: relative;
+      position: absolute;
+      top: inherit;
+      left: 0px;
+      width: 300px;
+      z-index: 1;
+      background-color: black;
+      top: 0px;
+      left: 30%;
+      top: -10px;
+      padding: 5px;
+      border-radius: 3px;
+      background-color: #f3f3f3;
+      color: #2196F3;
+      color: cadetblue;
+      text-align: center;
+      font-size: 18px
+    }
+
+    .show {
+      opacity: 1;
+      display: inline;
+    }
+
+    .hide {
+      display: none;
+      opacity: 0;
+      -moz-transition: opacity 0.4s ease-in-out;
+      -o-transition: opacity 0.4s ease-in-out;
+      -webkit-transition: opacity 0.4s ease-in-out;
+      transition: opacity 0.4s ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>how-to-name-it</h1>
+    <h2 id='info-bar' class='hide'></h2>
+  </header>
+  <main>
+
+    <form id="messenger" method="post" action="/message/send">
+
+
+      <div class="field-element">
+        <label for="receiver">To</label>
+        <input type="phone" id="phone" name="phone" value="" placeholder="" required="required" />
+
+      </div>
+      <div class="field-element">
+        <label for="note">Message</label>
+        <textarea name="notes" rows="8" cols="90%" id="notes"></textarea>
+
+      </div>
+      <input type="submit" name="name" value="Send" id="send" />
+    </form>
+  </main>
+
+  <footer>
+    <div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

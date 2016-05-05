@@ -1,0 +1,15 @@
+[{
+    "path": "POST /message/send",
+    "handler": "require:./lib/messenger/send"
+  }, {
+    "path": "GET /message",
+    "handler": "require:./lib/messenger"
+  }, {
+    "path": "GET /promote",
+    "handler": "require:./lib/promotions"
+  },
+  {
+    "path": "GET /",
+    "handler": "require:./lib"
+  }
+]
